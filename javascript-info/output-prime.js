@@ -4,17 +4,15 @@
 // Run a second for loop to check if n is divisible by all numbers to sq rt.
 // In the 2nd loop, if I can divide evenly, it's not a prime, so 
 
-let n = 4;
-outer: for (let i = 2; i <= n; i++) { //i 3 n 4 j 3
+let n = 10;
 
-  let halfNumSquareRoot = Math.floor(Math.sqrt(n)); //2
-  for (let j = 2; j <= halfNumSquareRoot; j++) {  //j2 2 = 2
+nextPrime: for (let i = 2; i <= n; i++) { 
+  
+  for (let j = 2; j < i; j++) {  
     
-    if ( i % j === 0 ) continue; // 2 % 2
-    console.log(j);
-
+    if ( i % j === 0 ) continue nextPrime; 
   }
-
-  // alert(i); // 2,3,5,7
-  // console.log(i);
+  
+  console.log(i);
+  // 2,3,5,7
 }
