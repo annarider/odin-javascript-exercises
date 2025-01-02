@@ -27,11 +27,14 @@ do {
 } while(num <= 100 && num);
 
 // Write the code which outputs prime numbers in the interval from 2 to n.
+// Receive n value. Run a for loop for as many iterations as n to check from 2 to n
+// Check if n is divisible by 2, 3, 5, 7
 
+let n = 10;
 for (let i = 2; i < n; i++) {
 
-  // if true, skip the remaining part of the body
-  if (i % 1 === 0 && i % n === 0) continue;
+  // if (i % 1 === 0 && i % n === 0 ) continue;
 
-  alert(i); // 2,3,5,7
+  // alert(i); // 2,3,5,7
+  // console.log(i);
 }
