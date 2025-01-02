@@ -25,3 +25,13 @@ let num;
 do {
   num = prompt("Enter a number greater than 100?", 0);
 } while(num <= 100 && num);
+
+// Write the code which outputs prime numbers in the interval from 2 to n.
+
+for (let i = 2; i < n; i++) {
+
+  // if true, skip the remaining part of the body
+  if (i % 1 === 0 && i % n === 0) continue;
+
+  alert(i); // 2,3,5,7
+}
