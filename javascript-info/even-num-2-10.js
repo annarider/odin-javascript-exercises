@@ -14,6 +14,14 @@ for (let i = 0; i < 3; i++) {
 
 let i = 0;
 do {
-  alert( i );
+  alert( `number ${i}!` );
   i++;
 } while(i < 3);
+
+
+// Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.
+
+let num = Number(prompt("Enter a number greater than 100?", "0"));
+while (num < 100 && num != NaN) {
+  prompt("Enter a number greater than 100?", "0");
+}
