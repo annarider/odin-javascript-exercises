@@ -27,13 +27,21 @@ do {
 } while(num <= 100 && num);
 
 // Write the code which outputs prime numbers in the interval from 2 to n.
-// Receive n value. Run a for loop for as many iterations as n to check from 2 to n
-// Check if n is divisible by 2, 3, 5, 7
+// Receive n value. 
+// Run a for loop for as many iterations as n to check from 2 to n
+// Run a second for loop to check if n is divisible by all numbers to sq rt.
+// In the 2nd loop, if I can divide evenly, it's not a prime, so 
 
-let n = 10;
-for (let i = 2; i < n; i++) {
+let n = 4;
+outer: for (let i = 2; i <= n; i++) {
 
-  // if (i % 1 === 0 && i % n === 0 ) continue;
+  let halfNumSquareRoot = Math.floor(Math.sqrt(n));
+  for (let j = 2; j <= halfNumSquareRoot; j++) {
+    
+    if ( i % j === 0 ) continue;
+    console.log(j);
+
+  }
 
   // alert(i); // 2,3,5,7
   // console.log(i);
