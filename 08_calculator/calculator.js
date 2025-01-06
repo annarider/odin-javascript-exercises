@@ -1,4 +1,6 @@
-const add = function() {
+const add = function( addend1, addend2 ) {
+  
+  return addend1 + addend2;
 	
 };
 
