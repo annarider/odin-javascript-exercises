@@ -1,8 +1,9 @@
 const sumAll = function(startInt, endInt) {
   let total = 0;
 
-  for (; i <= endInt; startInt++) {
+  while (startInt <= endInt) {
     total += startInt;
+    startInt++;
     console.log(total);
   }
 
