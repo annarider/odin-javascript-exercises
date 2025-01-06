@@ -14,11 +14,20 @@ const multiply = function(array) {
 	return array.reduce((sum, current) => sum * current);
 };
 
-const power = function() {
-	
+const power = function(base, exponent) {
+	return Math.pow(base, exponent);
 };
 
-const factorial = function() {
+const factorial = function(number) {
+  product = 1;
+  
+  if (number === 0) return product;
+
+  for (i = 1; i <= number; i++) {
+    product *= i;
+  }
+
+  return product;
 	
 };
 
