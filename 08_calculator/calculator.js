@@ -1,6 +1,6 @@
-const add = function( addend1, addend2 ) {
+const add = function( augend, addend) {
   
-  return addend1 + addend2;
+  return augend + addend;
 	
 };
 
