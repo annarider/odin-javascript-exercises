@@ -11,7 +11,7 @@ const sum = function(array) {
 };
 
 const multiply = function(array) {
-	return array.reduce((sum, current) => sum * current);
+	return array.reduce((product, current) => sum * current);
 };
 
 const power = function(base, exponent) {
@@ -19,16 +19,12 @@ const power = function(base, exponent) {
 };
 
 const factorial = function(number) {
-  product = 1;
-  
+  let product = 1;
   if (number === 0) return product;
-
   for (i = 1; i <= number; i++) {
     product *= i;
   }
-
   return product;
-	
 };
 
 // Do not edit below this line
