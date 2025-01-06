@@ -1,4 +1,6 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(temperature) {
+  // Formula is (x − 32) × 5/9 ⁠
+  return ( temperature - 32 ) * 5/9;
 };
 
 const convertToFahrenheit = function() {
