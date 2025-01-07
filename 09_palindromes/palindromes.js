@@ -1,13 +1,7 @@
 const palindromes = function (string) {
-
-  let reversedString = '';
-
-  for (i = 0; i < string.length; i++) {
-    reversedString += string.split("").reverse().join("");
-  }
-
-  return reversedString === string;
-
+  let reversedString = string.split("").reverse().join("");
+  console.log(reversedString);
+  return reversedString === string ? true : false;
 };
 
 // Do not edit below this line
