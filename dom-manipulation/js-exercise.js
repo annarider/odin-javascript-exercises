@@ -32,3 +32,13 @@ aside.append(heading1);
 aside.append(p);
 
 container.append(aside);
+
+// the JavaScript file
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World");
+
+// the JavaScript file
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", () => {
+  alert("Hello World");
+});
