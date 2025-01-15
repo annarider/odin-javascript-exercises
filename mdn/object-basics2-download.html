@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+
+    const band = {
+      "name": "Bic Runga",
+      "nationality": "Kiwi",
+      "genre": "Pop",
+      "members": 1,
+      "formed": 1994,
+      "split": false,
+      "albums": [{
+        "name": "Drive",
+        "released": 1997,
+        }, {
+          "name": "Beautiful Collision",
+          "released": 2002,
+        }, { 
+          "name": "Birds", 
+          "released:": 2005 
+        }
+      ],
+    }
+
+    bandInfo = `${band.name} is a ${band.nationality} who created ${band.genre} music.
+    ${band.name} has been active since ${band.formed}. She has released at least 
+    ${band.albums.length} albums`;
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
