@@ -31,14 +31,36 @@
     </ul>
 
     <script>
-      const shoppingList = document.querySelector("ul");
+      const list = document.querySelector("ul");
       const input = document.querySelector("input");
       const button = document.querySelector("button");
 
       button.addEventListener("click", () => {
-      shoppingList.innerText = `${input.value}`;
+        const inputItem = input.value;
+        input.value = '';
+
+    console.log("Input value after clearing:", input.value); 
+        // console.log(inputItem);
+        const listItem = document.createElement("li");
+        const span = document.createElement("span");
+        const deleteButton = document.createElement("button");
+
+        listItem.append(span);
+        listItem.append(deleteButton);
+
+        span.textContent = inputItem;
+        deleteButton.textContent = 'Delete';
+
+        list.append(listItem);
+
+        deleteButton.addEventListener("click", () => {
+          listItem.remove();
+        }); 
+        document.getElementById("item").focus();
       });
- 
+      
+      
+
 
     </script>
   </body>
